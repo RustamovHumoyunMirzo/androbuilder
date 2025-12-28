@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "androbuilder"
+version = "1.0.0"
+description = "A pure Python Android APK builder with auto SDK/NDK management"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+
+authors = [
+  { name = "Rustamov Humoyun Mirzo" }
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+]
+
+dependencies = [
+  "requests>=2.25.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/RustamovHumoyunMirzo/androbuilder"
+
+[project.scripts]
+androbuilder = "androbuilder.cli:main"
