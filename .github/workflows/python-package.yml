@@ -38,7 +38,7 @@ jobs:
 
     - name: Fix permissions on sdkmanager
       run: |
-        chmod +x tests/fixtures/testapp/.androbuilder/sdk/cmdline-tools/latest/bin/sdkmanager
+        chmod +x tests/testapp/
 
     - name: Lint with flake8
       run: |
