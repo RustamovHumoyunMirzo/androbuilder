@@ -1,6 +1,10 @@
+from unittest.mock import patch
 from androbuilder import Builder
 
-def test_builder_build():
+@patch('androbuilder.sdk_manager.subprocess.run')
+def test_builder_build(mock_run):
+    mock_run.return_value.returncode = 0
+
     builder = Builder(
         path="./tests/testapp",
         sdk="28",
@@ -12,7 +16,5 @@ def test_builder_build():
         buildtools="33.0.2",
     )
 
-    result_path = builder.build("./output")
-
-    assert isinstance(result_path, str), "Expected build result path as a string"
-    assert result_path.endswith(".apk"), "Expected output file to be an APK"
+    result_path = builder.build("./tests/output")
+    assert result_path.endswith(".apk")
