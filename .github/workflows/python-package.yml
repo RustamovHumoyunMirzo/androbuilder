@@ -33,6 +33,10 @@ jobs:
       run: |
         unzip tests/testapp.zip -d tests/testapp/
 
+    - name: Fix permissions on sdkmanager
+      run: |
+        chmod +x tests/fixtures/testapp/.androbuilder/sdk/cmdline-tools/latest/bin/sdkmanager
+
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
