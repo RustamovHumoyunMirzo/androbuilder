@@ -33,6 +33,9 @@ jobs:
       run: |
         unzip tests/testapp.zip -d tests/testapp/
 
+    - name: List unzipped files
+      run: ls -lR tests/testapp/
+
     - name: Fix permissions on sdkmanager
       run: |
         chmod +x tests/fixtures/testapp/.androbuilder/sdk/cmdline-tools/latest/bin/sdkmanager
