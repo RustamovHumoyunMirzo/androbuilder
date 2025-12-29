@@ -2,7 +2,7 @@ from androbuilder import Builder
 
 def test_builder_build():
     builder = Builder(
-        path="./testapp",
+        path="./tests/testapp",
         sdk="28",
         versioncode=1,
         versionname="1.0",
