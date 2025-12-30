@@ -280,10 +280,6 @@ except BuildError as e:
 - Java JDK 8+ (for javac and keytool)
 - Internet connection (for SDK/NDK downloads)
 
-## License
-
-MIT License - see LICENSE file for details
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
