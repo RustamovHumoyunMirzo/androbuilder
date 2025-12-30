@@ -1,6 +1,6 @@
 # Contributing to AndroBuilder
 
-Thank you for your interest in contributing to **AndroBuilder**!
+Thank you for your interest in contributing to **AndroBuilder**! 🗿
 We welcome contributions from everyone — whether it’s fixing a bug, improving documentation, suggesting features, or reviewing code.
 
 To get started, please take a moment to read this guide. It will help you make high-quality contributions and streamline the review process.
